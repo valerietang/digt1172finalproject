@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #2d2d40, #6e5494);
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#game-container {
+    background: linear-gradient(145deg, #6e5494, #3d3d5c);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    text-align: center;
+    border: 1px solid #9c9cb2;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #e0e0ff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+#storyline {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #dcdcff;
+}
+
+#scenario-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: #9146ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(145, 70, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #7026cc;
+    box-shadow: 0 6px 20px rgba(145, 70, 255, 0.7);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+h2 {
+    font-size: 22px;
+    color: #dcdcff;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+button:focus {
+    outline: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    #game-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
